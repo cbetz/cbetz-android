@@ -9,16 +9,15 @@ import com.actionbarsherlock.app.SherlockFragment;
 
 public class ResumeFragment extends SherlockFragment {
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		return inflater.inflate(R.layout.resume, container, false);
 	}
-    
-    
+
 }

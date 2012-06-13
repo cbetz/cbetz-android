@@ -21,7 +21,7 @@ public class CBetzSwipeActivity extends SherlockFragmentActivity {
 	TextView tabText;
 
 	@Override
-	public void onCreate(Bundle savedInstanceState){
+	public void onCreate(Bundle savedInstanceState) {
 		setTheme(R.style.Theme_Sherlock);
 		super.onCreate(savedInstanceState);
 
@@ -35,7 +35,8 @@ public class CBetzSwipeActivity extends SherlockFragmentActivity {
 		mTabsAdapter = new TabsAdapter(this, mViewPager);
 
 		mTabsAdapter.addTab(bar.newTab().setText("Me"), MeFragment.class, null);
-		mTabsAdapter.addTab(bar.newTab().setText("Resume"), ResumeFragment.class, null);
+		mTabsAdapter.addTab(bar.newTab().setText("Resume"),
+				ResumeFragment.class, null);
 	}
 
 	public static class TabsAdapter extends FragmentPagerAdapter implements
@@ -85,14 +86,15 @@ public class CBetzSwipeActivity extends SherlockFragmentActivity {
 					info.args);
 		}
 
-		public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+		public void onPageScrolled(int position, float positionOffset,
+				int positionOffsetPixels) {
 		}
 
 		public void onPageSelected(int position) {
 			mActionBar.setSelectedNavigationItem(position);
 		}
 
-		public void onPageScrollStateChanged(int state){
+		public void onPageScrollStateChanged(int state) {
 		}
 
 		public void onTabSelected(Tab tab, FragmentTransaction ft) {
@@ -104,8 +106,10 @@ public class CBetzSwipeActivity extends SherlockFragmentActivity {
 			}
 		}
 
-		public void onTabUnselected(Tab tab, FragmentTransaction ft) {}
+		public void onTabUnselected(Tab tab, FragmentTransaction ft) {
+		}
 
-		public void onTabReselected(Tab tab, FragmentTransaction ft) {}
+		public void onTabReselected(Tab tab, FragmentTransaction ft) {
+		}
 	}
 }
